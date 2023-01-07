@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 2px dashed $primary-color-yellow;
+  outline-offset: 4px;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+.h5,
+.h6 {
+  font-family: $main-font-family-1-bold;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+}
+
+section{
+  overflow-x: hidden;
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 97.05px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1206px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.scroll-none {
+  overflow: hidden;
+}

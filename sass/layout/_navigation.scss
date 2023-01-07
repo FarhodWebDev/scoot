@@ -1,0 +1,63 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &__link {
+    @include font-style(
+      $main-font-size,
+      $main-font-height,
+      normal,
+      $primary-color-dim-grey,
+      $main-font-family-1-bold,
+      700
+    );
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $primary-color-yellow;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__btn {
+    width: 20px;
+    height: 16px;
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+  &__btn.show {
+    display: inline-block;
+  }
+}
+
+.black-bg {
+  display: none;
+  width: w0vw;
+  height: 100vh;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.black-bg.show-nav {
+  width: 100vw;
+}

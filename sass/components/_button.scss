@@ -1,0 +1,32 @@
+.site-btn {
+  // display: inline;
+  display: inline-block;
+  background-color: $primary-color-yellow;
+  text-align: center;
+  @include font-style(
+    $main-font-size,
+    $main-font-height,
+    normal,
+    $secondary-color-white,
+    $main-font-family-1-bold,
+    700
+  );
+  border: 3px solid $primary-color-yellow;
+  border-radius: 0px;
+  padding: 1.1rem 4.1rem;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary-color-yellow;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.site-nav {
+  &__btn {
+    padding: 1.1rem 3.7rem;
+  }
+}

@@ -1,0 +1,359 @@
+@include responsive(tablet) {
+  .header {
+    padding-top: 2.2rem;
+    padding-bottom: 2.1rem;
+  }
+
+  .home {
+    .hero {
+      padding-top: 13.7rem;
+      padding-bottom: 21.7rem;
+      text-align: center;
+      background-image: url("../images/png/hero-2.png"),
+        url("../images/png/hero-tablet-bg.png");
+      background-size: 447px, cover;
+      background-position: bottom 40px left -150px, center;
+
+      .container {
+        background: transparent;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+
+    .instructions {
+      background-image: url(../images/png/instruction-mobile-bg.png);
+      background-size: 15px 512px;
+      background-position: top left 12.5vw;
+      padding-top: 12.2rem;
+      padding-bottom: 7.25rem;
+
+      &__list {
+        flex-direction: column;
+        gap: 4rem;
+      }
+
+      &__item {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__info {
+        max-width: 398px;
+      }
+    }
+
+    .easyTo {
+      padding-top: 7.25rem;
+      padding-bottom: 10.4rem;
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 5.6rem;
+      }
+
+      .ABSimg {
+        width: 100%;
+        // height: 170px;
+        position: absolute;
+        right: 0%;
+        top: 275px;
+        z-index: 5;
+      }
+
+      .second-img {
+        top: 70px;
+        right: -69%;
+      }
+
+      .left-side {
+        top: 0;
+        left: -55%;
+      }
+
+      .bg-half-circle {
+        background-position: top right;
+      }
+
+      .left-bg {
+        background-position: top left;
+      }
+
+      .T-right {
+        flex-direction: column-reverse;
+        margin-top: 12.8rem;
+        margin-bottom: 12em;
+      }
+
+      &__info {
+        width: 445px;
+      }
+
+      &__title {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  .footer {
+    .sign-up {
+      padding-top: 6.2rem;
+      padding-bottom: 6.2rem;
+
+      &__info {
+        text-align: center;
+        max-width: 415px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+      }
+
+      &__btns {
+        gap: 1.286rem;
+      }
+    }
+
+    &__navbar {
+      background-color: #333a44;
+      padding-top: 3.6rem;
+      padding-bottom: 3.6rem;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .icons {
+      &__group {
+        display: flex;
+        gap: 2.4rem;
+      }
+    }
+  }
+}
+
+@include responsive(720px) {
+  .scroll-none {
+    height: 100vw;
+    overflow-x: hidden;
+  }
+
+  .main {
+    margin-top: 72px;
+  }
+
+  .header {
+    .site-logo {
+      &__link {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .site-nav {
+      height: 91.7vh;
+      width: 75vw;
+      position: absolute;
+      left: -75vw;
+      right: 0;
+      top: 72px;
+      bottom: 0px;
+      background-color: #333a44 !important;
+      z-index: 1000 !important;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: start;
+      padding: 6.4rem 3.2rem 2.4rem 3.2rem;
+      transition: left 0.3s ease-in;
+
+      &__list {
+        flex-direction: column;
+        align-items: start;
+        gap: 2.4rem;
+      }
+
+      &__link {
+        color: $secondary-color-snow;
+        font-size: 1.8rem;
+        line-height: 1.39;
+
+        &:hover {
+          color: $primary-color-yellow;
+        }
+
+        &:active {
+          opacity: 0.6;
+        }
+
+        &:focus {
+          color: $primary-color-yellow;
+        }
+      }
+
+      &__btn.opener {
+        display: block;
+      }
+
+      &__btn.hide {
+        display: none;
+      }
+    }
+    .site-nav.show-nav {
+      left: 0;
+    }
+  }
+
+  .site-btn {
+    margin: 0 auto;
+  }
+}
+
+@include responsive(675px) {
+  .container {
+    padding: 0 25px;
+  }
+  .home {
+    .instructions {
+      background-position: top left 10vw;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .home {
+    .hero {
+      background-image: url("../images/png/mobile-bg.png"),
+        url("../images/png/hero-mobile-bg.png");
+      background-size: 140px, cover;
+      background-position: left bottom 34px, center;
+
+      &__info {
+        max-width: 350px;
+
+        p {
+          font-size: 1.5rem;
+          padding: 0;
+        }
+      }
+    }
+
+    .instructions {
+      background-image: none;
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+
+      &__list {
+        // display: grid;
+        // grid-template-columns: repeat(1, 573px);
+        gap: 4.8rem;
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      &__img-wrapper {
+        margin-bottom: 2.8rem;
+      }
+
+      &__info {
+        max-width: 398px;
+      }
+
+      &__title {
+        font-size: 2rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .footer {
+    .sign-up {
+      background-image: url("../images/png/Group 2.png");
+      background-size: contain;
+      padding-top: 8.8rem;
+      padding-bottom: 8.8rem;
+
+      &__info {
+        max-width: 311px;
+      }
+
+      &__title {
+        font-size: 3.2rem;
+      }
+
+      &__btn {
+        gap: 8px;
+        padding: {
+          left: 1.1rem;
+          right: 1.2rem;
+          top: 0.571rem;
+          bottom: 0.643rem;
+        }
+      }
+    }
+
+    &__navbar {
+      padding-top: 6.4rem;
+      padding-bottom: 8.8rem;
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .site-nav {
+      flex-direction: column;
+      gap: 8.5rem;
+
+      &__list {
+        flex-direction: column;
+      }
+    }
+
+    .site-logo__link {
+      margin: 0 auto;
+      margin-bottom: 4.14rem;
+    }
+  }
+}
+
+@include responsive(320px) {
+  .footer {
+    .sign-up {
+      &__btns {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+      }
+    }
+  }
+}

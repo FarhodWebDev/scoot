@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  background-color: $secondary-color-white;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.site-logo {
+  &__link {
+    margin-right: 5.81rem;
+  }
+}

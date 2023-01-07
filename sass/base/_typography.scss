@@ -1,0 +1,54 @@
+body {
+  @include font-style(
+    $main-font-size,
+    $main-font-height,
+    normal,
+    $primary-color-dim-grey,
+    $main-font-family-2,
+    400
+  );
+}
+
+h1 {
+  @include font-style(
+    $h1-font-size,
+    $h1-font-height,
+    $h1-font-spacing,
+    $primary-color-dark-navy,
+    $main-font-family-1-bold,
+    700
+  );
+}
+
+h2 {
+  @include font-style(
+    $h2-font-size,
+    $h2-font-height,
+    $h2-font-spacing,
+    $primary-color-dark-navy,
+    $main-font-family-1-bold,
+    700
+  );
+}
+
+h3 {
+  @include font-style(
+    $h3-font-size,
+    $h3-font-height,
+    $h3-font-spacing,
+    $primary-color-dark-navy,
+    $main-font-family-1-bold,
+    700
+  );
+}
+
+h4 {
+  @include font-style(
+    $h4-font-size,
+    $h4-font-height,
+    $h4-font-spacing,
+    $primary-color-dark-navy,
+    $main-font-family-1-bold,
+    700
+  );
+}

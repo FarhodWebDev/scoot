@@ -1,0 +1,129 @@
+.home {
+  .hero {
+    width: 100%;
+    background-image: url("../images/png/hero-2.png"),
+      url("../images/png/hero-1.png"), url("../images/png/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 580px 180px, 23vw 20px, cover;
+    background-position: 50vw 420px, 0px 420px, center center;
+    padding-top: 15.3em;
+    padding-bottom: 15.2rem;
+
+    &__info {
+      max-width: 500px;
+      color: $secondary-color-white;
+    }
+
+    &__title {
+      color: $secondary-color-white;
+      margin-bottom: 4rem;
+    }
+
+    &__text {
+      padding-left: 9.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .instructions {
+    background-image: url(../images/png/instruction-bg.png);
+    background-repeat: no-repeat;
+    background-size: 66% 15px;
+    background-position: left 20rem;
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+
+    &__list {
+      display: flex;
+      gap: 3rem;
+    }
+
+    &__item {
+      max-width: 350px;
+    }
+
+    &__img-wrapper {
+      width: 96px;
+      height: 96px;
+      background-color: $primary-color-yellow;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+
+    &__title {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  .easyTo {
+    padding-top: 10rem;
+    padding-bottom: 32.9rem;
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ABSimg {
+      width: 1070px;
+      height: 170px;
+      position: absolute;
+      right: -30%;
+      bottom: 0;
+      z-index: 5;
+    }
+
+    .second-img {
+      top: 70px;
+      right: -69%;
+    }
+
+    .left-side {
+      top: 0;
+      left: -70%;
+    }
+
+    .bg-half-circle {
+      background-image: url("../images/png/cicle-bg.png");
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+
+    .left-bg {
+      background-image: url("../images/png/cicle-bg-left.png");
+      background-position: center left;
+    }
+
+    .T-right {
+      flex-direction: row-reverse;
+      margin-top: 15.5em;
+      margin-bottom: 15.5em;
+    }
+
+    &__info {
+      width: 445px;
+    }
+
+    &__title {
+      margin-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-bottom: 4rem;
+    }
+
+    &__img {
+      &-wrapper {
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+}

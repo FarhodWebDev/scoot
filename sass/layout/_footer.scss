@@ -1,0 +1,111 @@
+.footer {
+  .sign-up {
+    background-color: $primary-color-dark-navy;
+    background-image: url("../images/png/Group 22.png");
+    background-size: 990px 150px;
+    background-position: bottom right !important;
+    background-repeat: no-repeat;
+    padding-top: 10.2rem;
+    padding-bottom: 10.2rem;
+
+    &__info {
+      width: 415px;
+    }
+
+    &__title {
+      color: $secondary-color-white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      background-color: $secondary-color-snow;
+      border-radius: 4px;
+      gap: 12px;
+      padding: {
+        left: 1.6rem;
+        right: 1.6rem;
+        top: 0.8rem;
+        bottom: 0.9rem;
+      }
+
+      &:focus {
+        outline-color: $secondary-color-snow;
+      }
+    }
+
+    .btn {
+      &__small-text {
+        margin: 0;
+        @include font-style(
+          1rem,
+          1.5,
+          -0.45px,
+          $primary-color-dark-navy,
+          $main-font-family-1-bold,
+          700
+        );
+      }
+
+      &__h5-text {
+        @include font-style(
+          2rem,
+          1.2,
+          -0.45px,
+          $primary-color-dark-navy,
+          $main-font-family-1-bold,
+          700
+        );
+      }
+    }
+  }
+
+  &__navbar {
+    background-color: #333a44;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons {
+    &__group {
+      display: flex;
+      gap: 2.4rem;
+    }
+
+    &__link {
+      height: 100%;
+      display: flex;
+      align-items: stretch;
+      svg {
+        height: 100%;
+        display: flex;
+      }
+      path {
+        transition: all 0.2s ease-in;
+      }
+      &:hover {
+        path {
+          fill: $secondary-color-light-grey;
+        }
+      }
+    }
+  }
+}
