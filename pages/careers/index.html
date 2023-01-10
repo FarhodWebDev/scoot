@@ -5,14 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCOOT | CAREER</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../../images/svg/site-logo-light.svg"
+      type="image/x-icon"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../../css/main.css" />
   </head>
-
-  <body>
+  <body class="career">
     <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <!-- SITE-NAV TOGGLER BTNs -->
+        <!-- ---OPENER -->
+        <button class="site-nav__btn opener">
+          <img src="../../images/svg/oppener.svg" />
+        </button>
+
+        <!-- --CLOSER -->
+        <button class="site-nav__btn closer">
+          <img src="../../images/svg/closer.svg" />
+        </button>
+
+        <!-- SITE--LOGO -->
+        <a href="../../" class="site-logo__link">
+          <img
+            class="site-logo__img"
+            width="103"
+            height="29"
+            src="../../images/svg/site-logo.svg"
+            alt="site logo | scoot"
+          />
+        </a>
+
+        <!-- NAV BAR -->
+        <nav class="site-nav">
+          <!-- NAV__LIST -->
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link"> About </a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="../locations/" class="site-nav__link"> Location </a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="../careers/" class="site-nav__link"> Careers </a>
+            </li>
+          </ul>
+
+          <!-- SITE BTN -->
+          <a href="#" class="site-btn">Get Scootin</a>
+        </nav>
+        <div class="black-bg"></div>
+      </div>
+    </header>
 
     <!-- MAIN -->
-    <main class="main career">
+    <main class="main">
+      <section class="main-top">
+        <div class="container">
+          <h1 class="main-top__title">Careers</h1>
 
+          <div class="img-group">
+            <img
+              class="img-group__item"
+              src="../../images/png/main-top-circle.png"
+            />
+            <img
+              class="img-group__item"
+              src="../../images/png/main-top-circle.png"
+            />
+            <img
+              class="img-group__item"
+              src="../../images/png/main-top-circle-half.png"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__info">
+            <h2 class="hero__title">Care to join our mission?</h2>
+
+            <p class="hero__text">
+              We’re always looking for ambitious individuals to help us on our
+              journey. If you’re passionate about our mission to provide clean,
+              accessible transport to improve urban living we want to hear from
+              you!
+            </p>
+
+            <a href="./" class="site-btn"> Say Hello </a>
+          </div>
+
+          <div class="hero__img-wrapper">
+            <img src="../../images/png/career-hero-img.png" class="hero__img" />
+          </div>
+
+          <img src="" class="abs-img">
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -25,7 +121,10 @@
 
           <div class="sign-up__btns">
             <a href="#" class="sign-up__btn">
-              <img src="./images/svg/apple.svg" alt="brand | app | sign up" />
+              <img
+                src="../../images/svg/apple.svg"
+                alt="brand | app | sign up"
+              />
               <div class="btn__text">
                 <small class="btn__small-text">Available on the</small>
                 <h5 class="btn__h5-text">AppStore</h5>
@@ -33,7 +132,10 @@
             </a>
 
             <a href="#" class="sign-up__btn">
-              <img src="./images/svg/google.svg" alt="brand | app | sign up" />
+              <img
+                src="../../images/svg/google.svg"
+                alt="brand | app | sign up"
+              />
               <div class="btn__text">
                 <small class="btn__small-text">Get it on</small>
                 <h5 class="btn__h5-text">GooglePlay</h5>
@@ -46,12 +148,12 @@
       <section class="footer__navbar">
         <div class="container">
           <!-- SITE---LOGO -->
-          <a href="./" class="site-logo__link">
+          <a href="../../" class="site-logo__link">
             <img
               class="site-logo__img"
               width="103"
               height="29"
-              src="./images/svg/site-logo-light.svg"
+              src="../../images/svg/site-logo-light.svg"
               alt="site logo | scoot"
             />
           </a>
@@ -61,17 +163,15 @@
             <!-- NAV__LIST -->
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a href="./pages/about/" class="site-nav__link"> About </a>
+                <a href="../about/" class="site-nav__link"> About </a>
               </li>
 
               <li class="site-nav__item">
-                <a href="./pages/locations/" class="site-nav__link">
-                  Location
-                </a>
+                <a href="../locations/" class="site-nav__link"> Location </a>
               </li>
 
               <li class="site-nav__item">
-                <a href="./pages/careers/" class="site-nav__link"> Careers </a>
+                <a href="./" class="site-nav__link"> Careers </a>
               </li>
             </ul>
 
@@ -135,7 +235,7 @@
       </section>
     </footer>
 
-
+    <!-- SCRIPT -->
     <script src="../../js/app.js"></script>
   </body>
 </html>

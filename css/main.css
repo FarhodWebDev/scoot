@@ -504,6 +504,10 @@ button {
   bottom: auto;
 }
 
+.career .main-top {
+  background: linear-gradient(180deg, rgba(47, 59, 89, 0.693) 99%, #fff 0%), url("../images/png/main-top-career-bg.png");
+}
+
 .header {
   width: 100%;
   position: fixed;
