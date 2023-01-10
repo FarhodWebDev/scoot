@@ -1,3 +1,84 @@
+@include responsive(1205px) {
+  .about {
+    .mobility {
+      .abs-img__arrow {
+        width: 600px;
+        height: 150px;
+      }
+      .abs-img__arrow.arrow-left {
+        width: 250px;
+        height: 170px;
+      }
+    }
+  }
+}
+
+@include responsive(1055px) {
+  .about {
+    .mobility {
+      &-inner {
+        background-position: top 6rem right;
+
+        .container {
+          flex-direction: column-reverse;
+          gap: 5.6rem;
+          margin-bottom: 12rem;
+        }
+        &.reverse {
+          background-position: top 6rem left;
+
+          .container {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .abs-img__arrow {
+          width: 700px;
+          height: 150px;
+          top: 33rem;
+          bottom: unset;
+        }
+        .abs-img__arrow.arrow-left {
+          width: 50%;
+          height: 170px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(972px) {
+  .about {
+    .values{
+      &__list{
+        flex-direction: column;
+        align-items: center;
+        gap: 5.5rem;
+      }
+    }
+
+    .faq {
+      h3 {
+        text-align: center;
+      }
+
+      .groups {
+        flex-direction: column;
+        align-items: center;
+
+        .cards {
+          width: 100%;
+
+          .card {
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @include responsive(tablet) {
   .header {
     padding-top: 2.2rem;
@@ -103,6 +184,14 @@
 
       &__title {
         margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  .about{
+    .mobility{
+      .abs-img__arrow{
+        width: 100%;
       }
     }
   }
@@ -230,6 +319,7 @@
   .container {
     padding: 0 25px;
   }
+
   .home {
     .instructions {
       background-position: top left 10vw;

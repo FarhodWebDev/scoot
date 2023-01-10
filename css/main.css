@@ -448,6 +448,10 @@ section {
   overflow: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 .site-btn {
   display: inline-block;
   background-color: #fcb72b;
@@ -473,6 +477,31 @@ section {
 
 .site-nav__btn {
   padding: 1.1rem 3.7rem;
+}
+
+.main-top {
+  padding-top: 6.85rem;
+  padding-bottom: 6.95rem;
+  background: linear-gradient(180deg, rgba(47, 59, 89, 0.693) 99%, #fff 0%), url("../images/png/main-top-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-top__title {
+  color: #ffffff;
+}
+.main-top .img-group {
+  display: flex;
+  position: absolute;
+  gap: 2.4rem;
+  right: 0;
+  top: auto;
+  bottom: auto;
 }
 
 .header {
@@ -555,10 +584,10 @@ section {
 
 .home .hero {
   width: 100%;
-  background-image: url("../images/png/hero-2.png"), url("../images/png/hero-1.png"), url("../images/png/hero-bg.png");
+  background: url("../images/png/hero-2.png"), url("../images/png/hero-1.png"), linear-gradient(180deg, rgba(47, 59, 89, 0.693) 99%, #fff 0%), url("../images/png/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: 580px 180px, 23vw 20px, cover;
-  background-position: 50vw 420px, 0px 420px, center center;
+  background-size: 580px 180px, 23vw 20px, cover, cover;
+  background-position: 50vw 420px, 0px 420px, center, center center;
   padding-top: 15.3em;
   padding-bottom: 15.2rem;
 }
@@ -658,6 +687,158 @@ section {
   overflow: hidden;
 }
 
+.about .mobility {
+  padding-top: 6rem;
+}
+.about .mobility-inner {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../images/png/cicle-bg.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.about .mobility__info {
+  max-width: 445px;
+}
+.about .mobility__title {
+  margin-bottom: 2.4rem;
+}
+.about .mobility__img-wrapper {
+  width: 445px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about .mobility .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .mobility .abs-img__arrow {
+  width: 735px;
+  position: absolute;
+  right: 0;
+  bottom: 8rem;
+}
+.about .mobility .arrow-left {
+  width: 450px;
+  left: 0;
+  top: 60px;
+}
+.about .mobility .reverse {
+  background-image: url("../../images/png/cicle-bg-left.png");
+  background-position: left center;
+}
+.about .mobility .reverse .container {
+  flex-direction: row-reverse;
+}
+.about .values {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.about .values .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.about .values__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.about .values__item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8.7rem;
+}
+.about .values__img {
+  border-radius: 50%;
+}
+.about .values__img-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+.about .values__img-number {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  right: 30%;
+  bottom: -55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60%;
+  background-color: #fcb72b;
+}
+.about .values__img__info {
+  text-align: center;
+}
+.about .values__img__title {
+  margin-bottom: 2.7rem;
+}
+.about .values__info {
+  text-align: center;
+}
+.about .values__title {
+  margin-bottom: 2.7rem;
+}
+.about .faq {
+  padding-top: 6rem;
+  padding-bottom: 16rem;
+}
+.about .faq .container {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+.about .faq__title {
+  text-align: center;
+}
+.about .faq .groups {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.about .faq .groups__title {
+  width: 350px;
+}
+.about .faq .groups .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.6rem;
+}
+.about .faq .groups .cards .card {
+  max-width: 730px;
+  padding: 3.2rem 4rem;
+  background-color: #f2f5f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.about .faq .groups .cards .card:hover {
+  background-color: #fff4df;
+}
+.about .faq .groups .cards .card__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.about .faq .groups .cards .card__btn {
+  border: none;
+  background-color: transparent;
+}
+.about .faq .groups .cards .card .open {
+  transform: rotate(180deg);
+}
+.about .faq .groups .cards .card__text {
+  color: #495567;
+}
+
 .footer .sign-up {
   background-color: #495567;
   background-image: url("../images/png/Group 22.png");
@@ -744,6 +925,63 @@ section {
   fill: #e5ecf4;
 }
 
+@media screen and (max-width: 1205px) {
+  .about .mobility .abs-img__arrow {
+    width: 600px;
+    height: 150px;
+  }
+  .about .mobility .abs-img__arrow.arrow-left {
+    width: 250px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .about .mobility-inner {
+    background-position: top 6rem right;
+  }
+  .about .mobility-inner .container {
+    flex-direction: column-reverse;
+    gap: 5.6rem;
+    margin-bottom: 12rem;
+  }
+  .about .mobility-inner.reverse {
+    background-position: top 6rem left;
+  }
+  .about .mobility-inner.reverse .container {
+    flex-direction: column-reverse;
+  }
+  .about .mobility-inner .abs-img__arrow {
+    width: 700px;
+    height: 150px;
+    top: 33rem;
+    bottom: unset;
+  }
+  .about .mobility-inner .abs-img__arrow.arrow-left {
+    width: 50%;
+    height: 170px;
+    top: 0;
+  }
+}
+@media screen and (max-width: 972px) {
+  .about .values__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+  }
+  .about .faq h3 {
+    text-align: center;
+  }
+  .about .faq .groups {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .faq .groups .cards {
+    width: 100%;
+  }
+  .about .faq .groups .cards .card {
+    max-width: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     padding-top: 2.2rem;
@@ -830,6 +1068,9 @@ section {
   }
   .home .easyTo__title {
     margin-bottom: 2.4rem;
+  }
+  .about .mobility .abs-img__arrow {
+    width: 100%;
   }
   .footer .sign-up {
     padding-top: 6.2rem;

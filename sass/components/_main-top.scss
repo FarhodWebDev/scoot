@@ -1,0 +1,33 @@
+.main-top {
+  padding-top: 6.85rem;
+  padding-bottom: 6.95rem;
+  // background-image: ;
+  background: linear-gradient(180deg, rgba(47, 59, 89, 0.693) 99%, #fff 0%),
+    url("../images/png/main-top-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: $secondary-color-white;
+  }
+
+  .img-group {
+    display: flex;
+    position: absolute;
+    gap: 2.4rem;
+    right: 0;
+    top: auto;
+    bottom: auto;
+
+    // &__item{
+    //   position: absolute;
+    // }
+  }
+}

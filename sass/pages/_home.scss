@@ -1,11 +1,12 @@
 .home {
   .hero {
     width: 100%;
-    background-image: url("../images/png/hero-2.png"),
-      url("../images/png/hero-1.png"), url("../images/png/hero-bg.png");
+    background: url("../images/png/hero-2.png"), url("../images/png/hero-1.png"),
+      linear-gradient(180deg, rgba(47, 59, 89, 0.693) 99%, #fff 0%),
+      url("../images/png/hero-bg.png");
     background-repeat: no-repeat;
-    background-size: 580px 180px, 23vw 20px, cover;
-    background-position: 50vw 420px, 0px 420px, center center;
+    background-size: 580px 180px, 23vw 20px, cover, cover;
+    background-position: 50vw 420px, 0px 420px, center, center center;
     padding-top: 15.3em;
     padding-bottom: 15.2rem;
 
