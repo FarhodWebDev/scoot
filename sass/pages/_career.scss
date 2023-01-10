@@ -1,0 +1,137 @@
+.career {
+  .hero {
+    background-image: url("../images/png/cicle-bg.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    position: relative;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__info {
+      max-width: 445px;
+    }
+
+    &__title {
+      margin-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-bottom: 4rem;
+    }
+
+    &__img-wrapper {
+      width: 445px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .abs-img {
+      position: absolute;
+      bottom: auto;
+      top: 420px;
+      right: 0;
+    }
+  }
+
+  .why {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    &__item {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8.7rem;
+    }
+
+    &__img {
+      border-radius: 50%;
+
+      &-wrapper {
+        position: relative;
+        width: 240px;
+        height: 240px;
+      }
+
+      &-number {
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        right: 30%;
+        bottom: -55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60%;
+        background-color: $primary-color-yellow;
+      }
+
+      &__info {
+        text-align: center;
+      }
+
+      &__title {
+        margin-bottom: 2.7rem;
+      }
+    }
+
+    &__info {
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  .staff {
+    padding-top: 12rem;
+    padding-bottom: 16rem;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $secondary-color-snow;
+      padding-top: 3.2rem;
+      padding-right: 6.4rem;
+      padding-bottom: 3.5rem;
+      padding-left: 4rem;
+    }
+
+    &__title{
+      margin-bottom: 0.8rem;
+    }
+
+    &__btn{
+      margin: 0;
+    }
+  }
+}

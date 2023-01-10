@@ -691,6 +691,120 @@ button {
   overflow: hidden;
 }
 
+.career .hero {
+  background-image: url("../images/png/cicle-bg.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  position: relative;
+}
+.career .hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.career .hero__info {
+  max-width: 445px;
+}
+.career .hero__title {
+  margin-bottom: 2.4rem;
+}
+.career .hero__text {
+  margin-bottom: 4rem;
+}
+.career .hero__img-wrapper {
+  width: 445px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.career .hero .abs-img {
+  position: absolute;
+  bottom: auto;
+  top: 420px;
+  right: 0;
+}
+.career .why {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.career .why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.career .why__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.career .why__item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8.7rem;
+}
+.career .why__img {
+  border-radius: 50%;
+}
+.career .why__img-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+.career .why__img-number {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  right: 30%;
+  bottom: -55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60%;
+  background-color: #fcb72b;
+}
+.career .why__img__info {
+  text-align: center;
+}
+.career .why__img__title {
+  margin-bottom: 2.7rem;
+}
+.career .why__info {
+  text-align: center;
+}
+.career .why__title {
+  margin-bottom: 2.7rem;
+}
+.career .staff {
+  padding-top: 12rem;
+  padding-bottom: 16rem;
+}
+.career .staff__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.career .staff__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f5f9;
+  padding-top: 3.2rem;
+  padding-right: 6.4rem;
+  padding-bottom: 3.5rem;
+  padding-left: 4rem;
+}
+.career .staff__title {
+  margin-bottom: 0.8rem;
+}
+.career .staff__btn {
+  margin: 0;
+}
+
 .about .mobility {
   padding-top: 6rem;
 }
@@ -966,6 +1080,18 @@ button {
     top: 0;
   }
 }
+@media screen and (max-width: 1020px) {
+  .career .hero .container {
+    flex-direction: column-reverse;
+    gap: 6.4rem;
+    align-items: center;
+    text-align: center;
+  }
+  .career .hero .abs-img {
+    width: 95vw;
+    height: 150px;
+  }
+}
 @media screen and (max-width: 972px) {
   .about .values__list {
     flex-direction: column;
@@ -984,6 +1110,11 @@ button {
   }
   .about .faq .groups .cards .card {
     max-width: none;
+  }
+  .career .why__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1174,11 +1305,25 @@ button {
   .home .instructions {
     background-position: top left 10vw;
   }
+  .career .staff__item {
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 625px) {
   h1 {
     font-size: 4rem;
     line-height: 1;
+  }
+  h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.67;
   }
   .home .hero {
     background-image: url("../images/png/mobile-bg.png"), url("../images/png/hero-mobile-bg.png");
@@ -1255,6 +1400,19 @@ button {
   .footer .site-logo__link {
     margin: 0 auto;
     margin-bottom: 4.14rem;
+  }
+}
+@media screen and (max-width: 566px) {
+  .career .hero__img-wrapper {
+    width: 311px;
+    height: 311px;
+  }
+  .career .hero__img {
+    width: 311px;
+    height: 311px;
+  }
+  .career .hero .abs-img {
+    top: 275px;
   }
 }
 @media screen and (max-width: 320px) {

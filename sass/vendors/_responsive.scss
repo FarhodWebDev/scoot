@@ -48,10 +48,28 @@
   }
 }
 
+@include responsive(1020px) {
+  .career {
+    .hero {
+      .container {
+        flex-direction: column-reverse;
+        gap: 6.4rem;
+        align-items: center;
+        text-align: center;
+      }
+
+      .abs-img {
+        width: 95vw;
+        height: 150px;
+      }
+    }
+  }
+}
+
 @include responsive(972px) {
   .about {
-    .values{
-      &__list{
+    .values {
+      &__list {
         flex-direction: column;
         align-items: center;
         gap: 5.5rem;
@@ -74,6 +92,15 @@
             max-width: none;
           }
         }
+      }
+    }
+  }
+  .career {
+    .why {
+      &__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 5.5rem;
       }
     }
   }
@@ -188,9 +215,9 @@
     }
   }
 
-  .about{
-    .mobility{
-      .abs-img__arrow{
+  .about {
+    .mobility {
+      .abs-img__arrow {
         width: 100%;
       }
     }
@@ -325,12 +352,31 @@
       background-position: top left 10vw;
     }
   }
+
+  .career {
+    .staff {
+      &__item {
+        flex-direction: column;
+        gap: 1.6rem;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
 }
 
 @include responsive(mobile) {
   h1 {
     font-size: 4rem;
     line-height: 1;
+  }
+  h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.67;
   }
   .home {
     .hero {
@@ -432,6 +478,26 @@
     .site-logo__link {
       margin: 0 auto;
       margin-bottom: 4.14rem;
+    }
+  }
+}
+
+@include responsive(566px) {
+  .career {
+    .hero {
+      &__img-wrapper {
+        width: 311px;
+        height: 311px;
+      }
+
+      &__img {
+        width: 311px;
+        height: 311px;
+      }
+
+      .abs-img {
+        top: 275px;
+      }
     }
   }
 }
