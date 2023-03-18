@@ -1,0 +1,11 @@
+.location {
+ .alert {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  background-color: #f0f0f0;
+  color: red;
+  padding: 1rem 1.2rem;
+  z-index: 999999;
+ }
+}

@@ -957,6 +957,16 @@ button {
   color: #495567;
 }
 
+.location .alert {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  background-color: #f0f0f0;
+  color: red;
+  padding: 1rem 1.2rem;
+  z-index: 999999;
+}
+
 .footer .sign-up {
   background-color: #495567;
   background-image: url("../images/png/Group 22.png");
